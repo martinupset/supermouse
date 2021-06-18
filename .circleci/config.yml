@@ -4,11 +4,11 @@ jobs:
     docker:
       - image:circleci/node: 10
 
-  steps:
-    - run:
-        name: show version
-        command: node -v
+    steps:
+      - run:
+          name: show version
+          command: node -v
 
-    -run:
-      name: HelloWorld from circleci
-      command: echo 'hello world'
+      -run:
+        name: HelloWorld from circleci
+        command: echo 'hello world'
