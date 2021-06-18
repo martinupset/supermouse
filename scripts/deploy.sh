@@ -12,7 +12,6 @@ pwd
 remote=$(git config remote.origin.url)
 
 echo 'remote is: '$remote
-echo 'miao'
 
 # make a directory to put the gp-pages branch
 mkdir gh-pages-branch
