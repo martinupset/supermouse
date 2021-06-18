@@ -1,0 +1,14 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image:circleci/node: 10
+
+  steps:
+    - run:
+        name: show version
+        command: node -v
+
+    -run:
+      name: HelloWorld from circleci
+      command: echo 'hello world'
