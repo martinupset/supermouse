@@ -30,5 +30,8 @@ jobs:
           name: Prepare shell commands
           command: chmod +x scripts/deploy.sh
       - run:
+          name: setup known hosts
+          command: ssh-keyscan 209.126.8.49 >> ~/.ssh/known_hosts
+      - run:
           name: Run deploy scripts
           command: ./scripts/deploy.sh
