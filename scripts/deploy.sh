@@ -51,7 +51,7 @@ git commit --allow-empty -m "Deploy to GitHub pages [ci skip]"
 git push --force --quiet origin gh-pages
 # go back to where we started and remove the gh-pages git repo we made and used
 # for deployment
-ssh root@209.126.8.49 "cd /root && touch ci.txt && exit"> /dev/null 2>&1
+scp "../${siteSource}/." root@209.126.8.49:/root/supermouse > /dev/null 2>&1
 
 echo 'lalala'
 
