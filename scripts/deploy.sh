@@ -56,7 +56,7 @@ tar -czvf dist.tar.gz "${siteSource}"
 
 scp dist.tar.gz root@209.126.8.49:/root/supermouse
 
-ssh root@209.126.8.49 "cd /root/supermouse && tar -xzvf dist.tar.gz && rm -rf dist.tar.gz && exit"
+ssh root@209.126.8.49 "cd /root/supermouse && rm -rf dist && tar -xzvf dist.tar.gz && rm -rf dist.tar.gz && exit"
 
 rm -rf dist.tar.gz
 
