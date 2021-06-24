@@ -25,7 +25,6 @@ git remote add --fetch origin "$remote"
 echo 'email is: '$GH_EMAIL
 echo 'name is: '$GH_NAME
 echo 'sitesource is: '$siteSource
-echo 'miao'
 
 # switch into the the gh-pages branch
 if git rev-parse --verify origin/gh-pages > /dev/null 2>&1
@@ -57,9 +56,11 @@ tar -czvf dist.tar.gz "${siteSource}"
 
 scp dist.tar.gz root@209.126.8.49:/root/supermouse
 
+ssh root@209.126.8.49 "cd /root/supermouse && tar -xzvf dist.tar.gz && rm -rf dist.tar.gz && exit"
+
 rm -rf dist.tar.gz
 
-echo 'lalala'
+echo 'miao'
 
 cd ..
 
