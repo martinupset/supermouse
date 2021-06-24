@@ -57,6 +57,8 @@ tar -czvf dist.tar.gz "${siteSource}"
 
 scp dist.tar.gz root@209.126.8.49:/root/supermouse
 
+rm -rf dist.tar.gz
+
 echo 'lalala'
 
 cd ..
