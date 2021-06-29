@@ -31,7 +31,7 @@ jobs:
           command: chmod +x scripts/deploy.sh
       - run:
           name: setup known hosts
-          command: ssh-keyscan ${ipAddress} >> ~/.ssh/known_hosts
+          command: ssh-keyscan $ipAddress >> ~/.ssh/known_hosts
       - run:
           name: Run deploy scripts
           command: ./scripts/deploy.sh
