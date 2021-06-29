@@ -30,7 +30,7 @@ jobs:
           name: Prepare shell commands
           command: chmod +x scripts/deploy.sh
       - run:
-          name: setup known hosts1
+          name: setup known hostsa
           command: echo $ipAddress
       - run:
           name: setup known hosts
